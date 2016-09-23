@@ -6,7 +6,7 @@ class HomeController {
         this.$state = $state;
     }
 
-    goToPage(Id) {
+    goToPage() {
         this.$state.go('public.page')        
     }
 }
