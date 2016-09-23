@@ -27,7 +27,12 @@ export const geolocModule = angular.module('geoloc', [
     sidenav
 ]);
 
-geolocModule.config(($stateProvider) => {
+geolocModule.config(($stateProvider, $mdThemingProvider) => {
+    
+    $mdThemingProvider.theme('deep-orange')
+    .primaryPalette('amber')
+    .accentPalette('orange');
+
     $stateProvider.state('public', {
         url: "/public",
         abstract: true,
@@ -38,6 +43,10 @@ geolocModule.config(($stateProvider) => {
             }
         }
     });
+});
+
+geolocModule.config(function() {
+  
 });
 
 geolocModule.controller('MainController', function($mdSidenav, $state) {
