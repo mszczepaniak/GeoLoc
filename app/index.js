@@ -5,6 +5,7 @@ import angularAnimate from 'angular-animate';
 import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 import ngResource from 'angular-resource';
+import toaster from 'angularjs-toaster';
 
 import home from './home/home.module';
 import geolocator from './geolocator/geolocator.module';
@@ -17,6 +18,7 @@ import './scss/bootstrap.scss'
 export const geolocModule = angular.module('geoloc', [
     angularMaterial,
     angularAnimate,
+    toaster,
     angularUIRouter,
     ngResource,
     geolocator,
