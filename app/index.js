@@ -7,7 +7,6 @@ import angularUIRouter from 'angular-ui-router';
 import ngResource from 'angular-resource';
 
 import home from './home/home.module';
-import appState from './appState/appState.module';
 import geolocator from './geolocator/geolocator.module';
 import page from './page/page.module';
 import sidenav from './sidenav/sidenav.module';
