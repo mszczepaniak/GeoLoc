@@ -1,0 +1,68 @@
+<div>
+  <h1>Ihre Immobilie</h1>
+    {{page.location}}
+  <form ng-submit="page.locate()" ng-cloak>
+    <section layout="row">
+        <md-input-container>
+            <label>Strasse</label>
+            <input 
+                type="text" 
+                ng-model="page.street">
+        </md-input-container>
+    </section>
+
+    <section layout="row">
+        <md-input-container>
+            <label>Hause Nummer</label>
+            <input 
+                type="text" 
+                ng-model="page.housenumber">
+        </md-input-container>
+    </section>
+
+    <section layout="row">
+        <md-input-container>
+            <label>Postleitzahl</label>
+            <input 
+                type="text" 
+                ng-model="page.postalcode">
+        </md-input-container>
+    </section>
+
+    <section layout="row">
+        <md-input-container>
+            <label>Stadt</label>
+            <input 
+                type="text" 
+                ng-model="page.city">
+        </md-input-container>
+    </section>
+
+    <section layout="row">
+        <md-radio-group ng-model="page.group1">
+  
+            <md-radio-button value="Radio1"> 
+                Radio1 
+            </md-radio-button>
+
+            <md-radio-button value="Radio2">
+                Radio2
+            </md-radio-button>
+
+        </md-radio-group>
+    </section>
+
+    <section layout="row">
+        <md-checkbox ng-model="page.cb1" aria-label="Checkbox 1">
+            Checkbox 1
+        </md-checkbox>
+    </section>
+    
+    <section layout="row">
+        <md-button class="md-raised md-warn" ng-click="page.locate()">
+            Schicken
+        </md-button>
+    </section>
+
+  </form>
+</div>
